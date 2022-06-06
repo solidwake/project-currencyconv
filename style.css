@@ -6,3 +6,52 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #bde0fe;
+}
+
+img {
+    height: 2rem;
+    width: 3rem;
+}
+
+.container {
+    width: 370px;
+    padding: 2rem;
+    border-radius: .5rem;
+    background: #fff;
+}
+
+.container header {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container form {
+    margin: 2.5rem 0 1.25rem 0;
+}
+
+form :where(input, select, button) {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: .3rem;
+}
+
+form p, select, i, .exchange-rate {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+form input {
+    height: 3rem;
+    font-size: 1rem;
+    padding: 0 1rem;
+    border: 1px solid #999;
+}
