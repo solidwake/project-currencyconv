@@ -18,7 +18,7 @@ body {
 
 .container {
     width: 25rem;
-    height: 25rem;
+    height: 26.5rem;
     padding: 2rem;
     border-radius: .5rem;
     background: #fff;
@@ -81,6 +81,7 @@ form .drop-list {
 .drop-list .conversion-arrows {
     margin-top: 1rem;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .currency-select select {
@@ -96,4 +97,11 @@ form .drop-list {
     font-size: 1.5rem;
     text-align: center;
     margin: 1rem 0;
+}
+
+form button {
+    height: 3.25rem;
+    color: #fff;
+    cursor: pointer;
+    background: #2a9d8f;
 }
