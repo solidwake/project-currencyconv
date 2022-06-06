@@ -34,7 +34,7 @@ img {
 }
 
 .container form {
-    margin: 2.5rem 0 1.25rem 0;
+    margin: 1.5rem 0 1.25rem 0;
 }
 
 form :where(input, select, button) {
@@ -44,7 +44,7 @@ form :where(input, select, button) {
     border-radius: .3rem;
 }
 
-form p, select, i, .exchange-rate {
+form p, select, i, input, .exchange-rate {
     font-size: 1rem;
     margin-bottom: .5rem;
 }
@@ -54,4 +54,19 @@ form input {
     font-size: 1rem;
     padding: 0 1rem;
     border: 1px solid #999;
+}
+
+form input:focus {
+    padding: 0 1rem;
+    border: 2px solid navy;
+}
+
+form .drop-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.drop-list .currencey-select {
+    
 }
