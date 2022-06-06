@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
 }
 
 body {
@@ -15,22 +16,19 @@ body {
     background: #bde0fe;
 }
 
-img {
-    height: 2rem;
-    width: 3rem;
-}
-
 .container {
-    width: 370px;
+    width: 25rem;
+    height: 25rem;
     padding: 2rem;
     border-radius: .5rem;
     background: #fff;
 }
 
 .container header {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 500;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .container form {
@@ -44,15 +42,14 @@ form :where(input, select, button) {
     border-radius: .3rem;
 }
 
-form p, select, i, input, .exchange-rate {
-    font-size: 1rem;
+form select {
     margin-bottom: .5rem;
 }
 
 form input {
     height: 3rem;
-    font-size: 1rem;
     padding: 0 1rem;
+    margin: 1rem 0;
     border: 1px solid #999;
 }
 
@@ -61,12 +58,42 @@ form input:focus {
     border: 2px solid navy;
 }
 
+.from p, .to p {
+    margin-left: .3rem;
+}
+
 form .drop-list {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: .5rem;
 }
 
-.drop-list .currencey-select {
-    
+.drop-list .currency-select {
+    display: flex;
+    height: 2rem;
+    width: 7rem;
+    border-radius: .3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.drop-list .conversion-arrows {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.currency-select select {
+    width: auto;
+    margin: 0 -.3rem 0 .3rem;
+}
+
+.currency-select img {
+    max-width: 2.5rem;
+}
+
+.exchange-rate {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 0;
 }
