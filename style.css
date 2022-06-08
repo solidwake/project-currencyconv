@@ -62,14 +62,14 @@ form input:focus {
     margin-left: .3rem;
 }
 
-form .drop-list {
+form .list {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: .5rem;
 }
 
-.drop-list .currency-select {
+.list .currency-select {
     display: flex;
     height: 2rem;
     width: 7rem;
@@ -78,7 +78,7 @@ form .drop-list {
     justify-content: center;
 }
 
-.drop-list .conversion-arrows {
+.list .conversion-arrows {
     margin-top: 1rem;
     font-size: 1rem;
     cursor: pointer;
