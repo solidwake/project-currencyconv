@@ -17,6 +17,18 @@ for(let i = 0; i < list.length; i++) {
         //Insert the option tag into the select tag
         list[i].insertAdjacentHTML('beforeend', option);
     }
+    list[i].addEventListener('change', event => {
+        loadFlag(event.target);
+    });
+}
+
+function loadFlag(element) {
+    for(code in country_code) {
+        if(code == element.value) {
+            let imgTag = element.parentElement.querySelector('img');
+            imgTag.src = `https://countryflagsapi.com/png/${country_code[code]}`
+        }
+    }
 }
 
 window.addEventListener('load', () => {
