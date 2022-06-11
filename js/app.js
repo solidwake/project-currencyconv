@@ -40,6 +40,16 @@ button.addEventListener('click', event => {
     getExchangeRate();
 });
 
+const conversionArrows = document.querySelector('.list .conversion-arrows');
+conversionArrows.addEventListener('click', () => {
+    let tempCode = fromCurrency.value; //Temporary currency code in 'from' list
+    fromCurrency.value = toCurrency.value; //Pass 'to' currency code into 'from' currency code
+    toCurrency.value = tempCode; //Pass temporary currency code into 'to' currency code
+    loadFlag(fromCurrency);
+    loadFlag(toCurrency);
+    getExchangeRate();
+});
+
 var apiKey = config.API_KEY;
 
 function getExchangeRate() {
